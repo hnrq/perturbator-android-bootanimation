@@ -1,0 +1,17 @@
+360 872 12
+
+p 1 0 part0
+
+c 0 0 part1
+
+c 2 0 part2
+
+c 1 0 part3
+
+c 3 0 part4
+
+c 1 0 part5
+
+c 3 0 part6
+
+c 3 0 part7
