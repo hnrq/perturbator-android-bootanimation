@@ -4,9 +4,17 @@ An Android boot animation made from "Perturbator - Sentient" [music video](https
 ## Installing
 To install it, you should create an uncompressed zip file:
 ```shell 
-zip -0qry -i \*.txt \*.png \*.wav @ ../bootanimation.zip *.txt part*
+zip -0qry -i \*.txt \*.png \*.wav @ ./bootanimation.zip *.txt part*
 ```
-Then, you should replace your phone's stock `bootanimation.zip` with the one created when running the above command.
+Then, you should replace your phone's stock `bootanimation.zip` with the one created when running the above command. If using adb:
+
+```shell
+adb connect ipaddress
+adb root
+adb remount
+adb push bootanimation.zip /system/media/
+adb reboot
+```
 
 ## Preview:
 <p align="center">
